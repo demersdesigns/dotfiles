@@ -19,3 +19,5 @@
   changed = green
   untracked = cyan reverse
   branch = magenta
+[user]
+	name = Paul Demers
