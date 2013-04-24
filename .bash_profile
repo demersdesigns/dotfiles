@@ -63,3 +63,9 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias ~='cd ~'
 alias h='history'
+
+#-------------------------------------------------------------
+# Shortcuts
+#-------------------------------------------------------------
+alias docs="cd ~/Documents"
+alias projects="cd ~/Documents/Projects"
