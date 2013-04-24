@@ -39,11 +39,6 @@ alias bashprofile="subl ~/dotfiles/.bash_profile"
 #-------------------------------------------------------------
 # Create New Virtual Host
 #-------------------------------------------------------------
-_addvhost() {
-  sublime /Applications/MAMP/conf/apache/httpd.conf
-  sublime /etc/hosts
-}
-
 alias addvhost="subl /Applications/MAMP/conf/apache/httpd.conf && subl /etc/hosts"
 
 #-------------------------------------------------------------
