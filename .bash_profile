@@ -1,3 +1,5 @@
+export PATH="$HOME/bin:$PATH"
+
 #-------------------------------------------------------------
 # Enable Terminal Colors & Add Color
 #-------------------------------------------------------------
@@ -12,7 +14,6 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 #-------------------------------------------------------------
 # GIT Terminal Tab Completion
 #-------------------------------------------------------------
-export PATH="$HOME/bin:$PATH"
 source ~/bin/git-completion.bash
 source ~/bin/git-prompt.sh
  
@@ -21,22 +22,8 @@ export PS1='[\w$(__git_ps1 " (%s)")]\n\$ '
 #-------------------------------------------------------------
 # Show/Hide Hidden Files
 #-------------------------------------------------------------
-_showhidden() {
-  defaults write com.apple.finder AppleShowAllFiles -bool YES;
-  killall Finder
-  echo "Hidden files are now showing."
-}
-
-alias showhidden=_showhidden
-
-
-_hidehidden() {
-  defaults write com.apple.finder AppleShowAllFiles -bool NO;
-  killall Finder
-  echo "Hidden files are now hidden."
-}
-
-alias hidehidden=_hidehidden
+alias showhidden="defaults write com.apple.finder AppleShowAllFiles -bool YES && killall Finder && echo 'Hidden files are now showing.'"
+alias hidehidden="defaults write com.apple.finder AppleShowAllFiles -bool NO && killall Finder && echo 'Hidden files are now Hidden.'"
 
 #-------------------------------------------------------------
 # Show/Hide Desktop Icons
@@ -47,11 +34,7 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 #-------------------------------------------------------------
 # Open Bash Profile
 #-------------------------------------------------------------
-_bashprofile() {
-  sublime ~/.bash_profile
-}
-
-alias bashprofile=_bashprofile
+alias bashprofile="subl ~/dotfiles/.bash_profile"
 
 #-------------------------------------------------------------
 # Create New Virtual Host
@@ -61,7 +44,7 @@ _addvhost() {
   sublime /etc/hosts
 }
 
-alias addvhost=_addvhost
+alias addvhost="subl /Applications/MAMP/conf/apache/httpd.conf && subl /etc/hosts"
 
 #-------------------------------------------------------------
 # Open File in Finder
