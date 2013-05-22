@@ -54,7 +54,7 @@ alias ls="ls -laxo"
 #-------------------------------------------------------------
 # Generic Aliases
 #-------------------------------------------------------------
-alias rm='rm -i'
+#alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias mkdir='mkdir -p'
