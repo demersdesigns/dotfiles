@@ -70,3 +70,5 @@ alias h='history'
 alias downloads="cd ~/Downloads"
 alias docs="cd ~/Documents"
 alias projects="cd ~/Documents/Projects"
+
+source ~/.extra

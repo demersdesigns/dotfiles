@@ -20,4 +20,5 @@
   untracked = cyan reverse
   branch = magenta
 [user]
-	name = Paul Demers
+	name = demersdesigns
+	email = paul@demersdesigns.com
