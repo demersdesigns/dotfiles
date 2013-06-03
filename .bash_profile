@@ -34,22 +34,22 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 #-------------------------------------------------------------
 # Open Bash Profile
 #-------------------------------------------------------------
-alias bashprofile="subl ~/dotfiles/.bash_profile"
+alias bashprofile='subl ~/dotfiles/.bash_profile'
 
 #-------------------------------------------------------------
 # Create New Virtual Host
 #-------------------------------------------------------------
-alias addvhost="subl /Applications/MAMP/conf/apache/httpd.conf && subl /etc/hosts"
+alias addvhost='subl /Applications/MAMP/conf/apache/httpd.conf && subl /etc/hosts'
 
 #-------------------------------------------------------------
 # Open File in Finder
 #-------------------------------------------------------------
-alias reveal="open -R"
+alias reveal='open -R'
 
 #-------------------------------------------------------------
 # Show Enhanced Version of ls
 #-------------------------------------------------------------
-alias ls="ls -laxo"
+alias ls='ls -laxo'
 
 #-------------------------------------------------------------
 # Generic Aliases
@@ -67,8 +67,15 @@ alias h='history'
 #-------------------------------------------------------------
 # Shortcuts
 #-------------------------------------------------------------
-alias downloads="cd ~/Downloads"
-alias docs="cd ~/Documents"
-alias projects="cd ~/Documents/Projects"
+alias downloads='cd ~/Downloads'
+alias docs='cd ~/Documents'
+alias projects='cd ~/Documents/Projects'
 
 source ~/.extra
+
+#-------------------------------------------------------------
+# GIT
+#-------------------------------------------------------------
+alias gs='git status'
+alias gc='git checkout'
+alias gp='git push'
