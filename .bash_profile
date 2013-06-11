@@ -77,5 +77,6 @@ source ~/.extra
 # GIT
 #-------------------------------------------------------------
 alias gs='git status'
-alias gc='git checkout'
+alias gco='git checkout'
 alias gp='git push'
+alias gc='git commit -m'

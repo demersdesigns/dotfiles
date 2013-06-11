@@ -23,3 +23,5 @@
 [user]
 	name = demersdesigns
 	email = paul@demersdesigns.com
+[credential]
+	helper = osxkeychain
