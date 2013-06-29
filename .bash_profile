@@ -68,15 +68,25 @@ alias h='history'
 # Shortcuts
 #-------------------------------------------------------------
 alias downloads='cd ~/Downloads'
+
+# Sometimes I type one or the other
 alias docs='cd ~/Documents'
+alias documents='cd ~/Documents'
+
+# Home work directory
+alias work='cd ~/Documents/Projects'
+
+# Temporary work directory
 alias projects='cd ~/Documents/Projects'
 
-source ~/.extra
+# source ~/.extra
 
 #-------------------------------------------------------------
 # GIT
 #-------------------------------------------------------------
 alias gs='git status'
 alias gco='git checkout'
-alias gp='git push'
+alias ga='git add'
+alias gaa='git add .'
+alias gp='git push origin'
 alias gc='git commit -m'
