@@ -25,3 +25,14 @@
 	email = paul@demersdesigns.com
 [credential]
 	helper = osxkeychain
+[alias]
+  pl = pull --prune
+  l = log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  p = push origin
+  d = diff
+  c = commit
+  co = checkout
+  b = branch
+  s = status
+  a = add
+  aa = add .
