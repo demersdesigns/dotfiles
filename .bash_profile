@@ -14,8 +14,8 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 #-------------------------------------------------------------
 # GIT Terminal Tab Completion
 #-------------------------------------------------------------
-source ~/bin/git-completion.bash
-source ~/bin/git-prompt.sh
+source ~/dotfiles/git-completion.bash
+source ~/dotfiles/git-prompt.sh
  
 export PS1='[\w$(__git_ps1 " (%s)")]\n\$ '
 
