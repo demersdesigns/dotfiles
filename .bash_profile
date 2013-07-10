@@ -83,6 +83,11 @@ alias projects='cd ~/Projects'
 alias dotfiles='cd ~/dotfiles'
 
 #-------------------------------------------------------------
+# Sites
+#-------------------------------------------------------------
+alias github='open -a /Applications/Google\ Chrome.app http://www.github.com'
+
+#-------------------------------------------------------------
 # GIT
 #-------------------------------------------------------------
 alias gs='git status'
