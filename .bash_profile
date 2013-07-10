@@ -76,10 +76,11 @@ alias documents='cd ~/Documents'
 # Home work directory
 alias work='cd ~/Documents/Projects'
 
-# Temporary work directory
-alias projects='cd ~/Documents/Projects'
+# Work directory
+alias projects='cd ~/Projects'
 
-# source ~/.extra
+# Dotfiles directory
+alias dotfiles='cd ~/dotfiles'
 
 #-------------------------------------------------------------
 # GIT
