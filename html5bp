@@ -1,0 +1,9 @@
+#/bin/bash
+html5bp="$HOME/projects/html5-boilerplate/"
+projectFolder="$HOME/projects/$1"
+
+mkdir $HOME/projects/$1 && cp -r "$html5bp" $HOME/projects/$1
+
+/Applications/MAMP/bin/stop.sh
+
+subl "/Applications/MAMP/conf/apache/httpd.conf" && subl "/etc/hosts"
