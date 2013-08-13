@@ -1,4 +1,4 @@
-export PATH="/usr/local/bin:$HOME/bin:$PATH"
+export PATH="/usr/local/bin:$HOME/bin:/usr/local/share/npm/bin:$PATH"
 
 #-------------------------------------------------------------
 # Enable Terminal Colors & Add Color
