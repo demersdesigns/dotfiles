@@ -1,4 +1,4 @@
-export PATH="$HOME/bin:$PATH"
+export PATH="/usr/local/bin:$HOME/bin:$PATH"
 
 #-------------------------------------------------------------
 # Enable Terminal Colors & Add Color
