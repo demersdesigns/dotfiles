@@ -78,11 +78,8 @@ alias downloads='cd ~/Downloads'
 alias docs='cd ~/Documents'
 alias documents='cd ~/Documents'
 
-# Home work directory
-alias work='cd ~/Documents/Projects'
-
 # Work directory
-alias projects='cd ~/Projects'
+alias projects='cd ~/Documents/Projects'
 
 # Dotfiles directory
 alias dotfiles='cd ~/dotfiles'
