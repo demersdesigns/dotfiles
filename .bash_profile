@@ -68,6 +68,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias ~='cd ~'
 alias h='history'
+alias be='bundle exec'  
 
 #-------------------------------------------------------------
 # Shortcuts
