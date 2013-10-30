@@ -100,3 +100,13 @@ alias gaa='git add -A'
 alias gp='git push origin'
 alias gc='git commit -m'
 alias gcl='git clone'
+
+
+#-------------------------------------------------------------
+# SVN - Sad Panda :-(
+#-------------------------------------------------------------
+alias sco='svn checkout'
+alias ss='svn status'
+alias sup='svn up'
+alias sa='svn add'
+alias sc='svn commit -m'
