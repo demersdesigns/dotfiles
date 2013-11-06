@@ -68,6 +68,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias ~='cd ~'
 alias h='history'
+alias be='bundle exec'  
 
 #-------------------------------------------------------------
 # Shortcuts
@@ -95,7 +96,17 @@ alias github='open -a /Applications/Google\ Chrome.app http://www.github.com'
 alias gs='git status'
 alias gco='git checkout'
 alias ga='git add'
-alias gaa='git add .'
+alias gaa='git add -A'
 alias gp='git push origin'
 alias gc='git commit -m'
 alias gcl='git clone'
+
+
+#-------------------------------------------------------------
+# SVN - Sad Panda :-(
+#-------------------------------------------------------------
+alias sco='svn checkout'
+alias ss='svn status'
+alias sup='svn up'
+alias sa='svn add'
+alias sc='svn commit -m'
