@@ -89,6 +89,7 @@ alias dotfiles='cd ~/dotfiles'
 # Sites
 #-------------------------------------------------------------
 alias github='open -a /Applications/Google\ Chrome.app http://www.github.com'
+alias codepen='open -a /Applications/Google\ Chrome.app http://www.codepen.io'
 
 #-------------------------------------------------------------
 # GIT
