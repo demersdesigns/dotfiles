@@ -73,6 +73,10 @@ alias be='bundle exec'
 #-------------------------------------------------------------
 # Shortcuts
 #-------------------------------------------------------------
+# Desktop directory
+alias github='cd ~/Desktop'
+
+# Downloads directory
 alias downloads='cd ~/Downloads'
 
 # Sometimes I type one or the other
@@ -85,11 +89,14 @@ alias projects='cd ~/Documents/Projects'
 # Dotfiles directory
 alias dotfiles='cd ~/dotfiles'
 
+# Github directory
+alias github='cd ~/Documents/github'
+
 #-------------------------------------------------------------
 # Sites
 #-------------------------------------------------------------
-alias github='open -a /Applications/Google\ Chrome.app http://www.github.com'
-alias codepen='open -a /Applications/Google\ Chrome.app http://www.codepen.io'
+alias go_gh='open -a /Applications/Google\ Chrome.app http://www.github.com'
+alias go_cp='open -a /Applications/Google\ Chrome.app http://www.codepen.io'
 
 #-------------------------------------------------------------
 # GIT
