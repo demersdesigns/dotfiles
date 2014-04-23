@@ -1,120 +1,26 @@
-export PATH="/usr/local/bin:$HOME/bin:/usr/local/share/npm/bin:$PATH"
+# Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
+# ~/.extra can be used for settings you don’t want to commit
+for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
+	[ -r "$file" ] && source "$file"
+done
+unset file
 
-#-------------------------------------------------------------
-# Enable Terminal Colors & Add Color
-#-------------------------------------------------------------
-export CLICOLOR=1
-export LSCOLORS=ExFxCxDxBxegedabagacad
+# init z   https://github.com/rupa/z
+#. ~/code/z/z.sh
 
-#-------------------------------------------------------------
-# Load RVM into a shell session *as a function*
-#-------------------------------------------------------------
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# init rvm
+source ~/.rvm/scripts/rvm
 
-#-------------------------------------------------------------
-# GIT Terminal Tab Completion
-#-------------------------------------------------------------
-source ~/dotfiles/git-completion.bash
-source ~/dotfiles/git-prompt.sh
- 
-export PS1='[\w$(__git_ps1 " (%s)")]\n\$ '
+# Case-insensitive globbing (used in pathname expansion)
+shopt -s nocaseglob
 
-#-------------------------------------------------------------
-# Show/Hide Hidden Files
-#-------------------------------------------------------------
-alias showhidden="defaults write com.apple.finder AppleShowAllFiles -bool YES && killall Finder && echo 'Hidden files are now showing.'"
-alias hidehidden="defaults write com.apple.finder AppleShowAllFiles -bool NO && killall Finder && echo 'Hidden files are now Hidden.'"
+# Prefer US English and use UTF-8
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US"
 
-#-------------------------------------------------------------
-# Show/Hide Desktop Icons
-#-------------------------------------------------------------
-alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+# Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
+[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
 
-#-------------------------------------------------------------
-# Open Bash Profile
-#-------------------------------------------------------------
-alias bashprofile='subl ~/dotfiles/.bash_profile'
-
-#-------------------------------------------------------------
-# Create New Virtual Host
-#-------------------------------------------------------------
-alias addvhost='subl /Applications/MAMP/conf/apache/httpd.conf && subl /etc/hosts'
-
-#-------------------------------------------------------------
-# Open File in Finder
-#-------------------------------------------------------------
-alias reveal='open -R'
-
-#-------------------------------------------------------------
-# Show Enhanced Version of ls
-#-------------------------------------------------------------
-alias ls='ls -laxo'
-
-#-------------------------------------------------------------
-# Get IP Address
-#-------------------------------------------------------------
-alias ip='netstat -p tcp'
-
-#-------------------------------------------------------------
-# Generic Aliases
-#-------------------------------------------------------------
-#alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
-alias mkdir='mkdir -p'
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias ~='cd ~'
-alias h='history'
-alias be='bundle exec'  
-
-#-------------------------------------------------------------
-# Shortcuts
-#-------------------------------------------------------------
-# Desktop directory
-alias github='cd ~/Desktop'
-
-# Downloads directory
-alias downloads='cd ~/Downloads'
-
-# Sometimes I type one or the other
-alias docs='cd ~/Documents'
-alias documents='cd ~/Documents'
-
-# Work directory
-alias projects='cd ~/Documents/Projects'
-
-# Dotfiles directory
-alias dotfiles='cd ~/dotfiles'
-
-# Github directory
-alias github='cd ~/Documents/github'
-
-#-------------------------------------------------------------
-# Sites
-#-------------------------------------------------------------
-alias go_gh='open -a /Applications/Google\ Chrome.app http://www.github.com'
-alias go_cp='open -a /Applications/Google\ Chrome.app http://www.codepen.io'
-
-#-------------------------------------------------------------
-# GIT
-#-------------------------------------------------------------
-alias gs='git status'
-alias gco='git checkout'
-alias ga='git add'
-alias gaa='git add -A'
-alias gp='git push origin'
-alias gc='git commit -m'
-alias gcl='git clone'
-
-
-#-------------------------------------------------------------
-# SVN - Sad Panda :-(
-#-------------------------------------------------------------
-alias sco='svn checkout'
-alias ss='svn status'
-alias sup='svn up'
-alias sa='svn add'
-alias sc='svn commit -m'
+# Add tab completion for `defaults read|write NSGlobalDomain`
+# You could just use `-g` instead, but I like being explicit
+complete -W "NSGlobalDomain" defaults
