@@ -3,6 +3,10 @@ function md() {
 	mkdir -p "$@" && cd "$@"
 }
 
+#Open in Chrome
+function chrome() {
+	open -a "Google Chrome" "$a"
+}
 
 # find shorthand
 function f() {
