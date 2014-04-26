@@ -5,7 +5,7 @@ function md() {
 
 #Open in Chrome
 function chrome() {
-	open -a "Google Chrome" "$a"
+	open -a "Google Chrome" $@
 }
 
 # find shorthand
