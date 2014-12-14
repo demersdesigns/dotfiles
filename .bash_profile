@@ -9,7 +9,7 @@ unset file
 #. ~/code/z/z.sh
 
 # init rvm
-source ~/.rvm/scripts/rvm
+#source ~/.rvm/scripts/rvm
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
@@ -24,3 +24,16 @@ export LANG="en_US"
 # Add tab completion for `defaults read|write NSGlobalDomain`
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults
+
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
+source ~/.profile
