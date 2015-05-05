@@ -64,7 +64,7 @@ alias c='pygmentize -O style=monokai -f console256 -g'
 # GIT STUFF
 
 # Undo a `git push`
-alias undopush="git push -f origin HEAD^:master"
+#alias undopush="git push -f origin HEAD^:master"
 
 
 # git root
@@ -99,10 +99,13 @@ alias trimcopy="tr -d '\n' | pbcopy"
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
 # Git
+alias g='git'
 alias gs='git status'
 alias gco='git checkout'
+alias gcom='git checkout master'
 alias ga='git add'
 alias gaa='git add --all :/'
+alias gp='git push origin HEAD'
 alias gpm='git push origin master'
 alias gc='git commit -m'
 alias gcl='git clone'
@@ -110,7 +113,6 @@ alias gnb='git checkout -b'
 alias gd='git difftool'
 
 # Shortcuts
-alias g="git"
 alias v="vim"
 
 # Desktop directory

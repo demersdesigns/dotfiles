@@ -34,6 +34,12 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
+
+  # Add git completion to aliases
+  __git_complete g __git_main
+  __git_complete gco _git_checkout
+  __git_complete ga _git_add
+  __git_complete gp _git_push
 fi
 
 source ~/.profile
