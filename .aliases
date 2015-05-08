@@ -106,6 +106,8 @@ alias gaa='git add --all :/'
 alias gp='git push origin'
 alias gc='git commit -m'
 alias gcl='git clone'
+alias gnb='git checkout -b'
+alias gd='git difftool'
 
 # Shortcuts
 alias g="git"
@@ -118,24 +120,17 @@ alias desktop='cd ~/Desktop'
 alias downloads='cd ~/Downloads'
 
 # Sometimes I type one or the other
-alias docs='cd ~/Documents'
-alias documents='cd ~/Documents'
-
-alias hdocs='cd /Volumes/Docs/Users/demersdesigns/Documents'
-alias hdocuments='cd /Volumes/Docs/Users/demersdesigns/Documents'
+alias docs='cd /Volumes/Docs/Users/demersdesigns/Documents'
+alias documents='cd /Volumes/Docs/Users/demersdesigns/Documents'
 
 # Work directory
-alias projects='cd ~/Documents/Projects'
-
-alias hprojects='cd /Volumes/Docs/Users/demersdesigns/Documents/Projects'
+alias projects='cd /Volumes/Docs/Users/demersdesigns/Documents/Projects'
 
 # Dotfiles directory
 alias dotfiles='cd ~/dotfiles'
 
 # Github directory
-alias github='cd ~/Documents/github'
-
-alias hgithub='cd /Volumes/Docs/Users/demersdesigns/Documents/github'
+alias github='cd /Volumes/Docs/Users/demersdesigns/Documents/github'
 
 # Sites
 alias go_gh='open -a /Applications/Google\ Chrome.app http://www.github.com'

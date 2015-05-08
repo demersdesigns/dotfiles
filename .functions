@@ -3,6 +3,16 @@ function md() {
 	mkdir -p "$@" && cd "$@"
 }
 
+# Git delete both local and remote branch
+function gdb() {
+  git branch -D "$@" && git push origin :"$@"
+}
+
+# Checkout Baseplate into current directory
+function getBaseplate() {
+  gcl git@github.com:demersdesigns/baseplate.git .
+}
+
 #Open in Chrome
 function chrome() {
 	open -a "Google Chrome" $@
