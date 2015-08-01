@@ -111,6 +111,9 @@ alias gc='git commit -m'
 alias gcl='git clone'
 alias gnb='git checkout -b'
 alias gd='git difftool'
+alias getbp='git clone --depth 1 git@github.com:demersdesigns/baseplate.git'
+
+
 
 # Shortcuts
 alias v="vim"
