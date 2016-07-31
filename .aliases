@@ -129,13 +129,13 @@ alias docs='cd ~/Documents'
 alias documents='cd ~/Documents'
 
 # Work directory
-alias projects='cd ~/Documents/Projects'
+alias projects='cd /Volumes/Docs/Users/demersdesigns/Documents/Projects'
 
 # Dotfiles directory
 alias dotfiles='cd ~/dotfiles'
 
 # Github directory
-alias github='cd ~/Documents/github'
+alias github='cd /Volumes/Docs/Users/demersdesigns/Documents/github'
 
 # Sites
 alias go_gh='open -a /Applications/Google\ Chrome.app http://www.github.com'

@@ -12,6 +12,14 @@ function git-new() {
   git push origin master;
 }
 
+#Get new Baseplate instance
+function new-bp() {
+    md "$@";
+    gcl https://github.com/demersdesigns/baseplate.git "$@";
+    cd "$@";
+    storm .;
+}
+
 #Open in Chrome
 function chrome() {
 	open -a "Google Chrome" $@
